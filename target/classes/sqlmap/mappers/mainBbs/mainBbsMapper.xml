@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.union.example.board.service.impl.MainBbsMapper">
+
+	<resultMap type="mainBbsVo" id="mainBbsData">
+		<id column="no"             property="no"/>
+		<id column="title"           property="title"/>
+		<id column="content"      property="content"/>
+		<id column="reg_id"        property="regId"/>
+		<id column="reg_dt"        property="regDt"/>
+		<id column="del_yn"        property="delYn"/>
+		<id column="mod_id"       property="modId"/>
+		<id column="mod_dt"      property="modDt"/>
+	</resultMap>
+
+	<!-- 목록 -->
+	<!-- <select id="selectMainList" parameterType="mainBbsVo" resultMap="mainBbsData">
+		/* mainBbsMapper.selectMainList */
+		SELECT
+			SQL_CALC_FOUND_ROWS
+			A.*
+		FROM 
+			TB_MAIN_BBS A inner join (
+				SELECT 
+					no
+				FROM 
+					TB_MAIN_BBS
+				WHERE
+					DEL_YN = 'N'
+				ORDER BY no DESC
+				LIMIT #{lists} OFFSET #{firstRecordIndex}	
+			) AS B
+		USING(no)
+	</select> -->
+	<select id="selectMainList" parameterType="mainBbsVo" resultMap="mainBbsData">
+		/* mainBbsMapper.selectMainList */
+		SELECT
+			no
+			, title
+			, content
+			, reg_dt
+		FROM
+			TB_MAIN_BBS
+		WHERE
+			DEL_YN = 'N'
+		ORDER BY no DESC
+		LIMIT #{lists} OFFSET #{firstRecordIndex}
+	</select>
+
+	<!-- 상세 -->
+	<select id="selectMainData" parameterType="mainBbsVo" resultMap="mainBbsData">
+		SELECT 
+			*
+		FROM 
+			TB_MAIN_BBS
+		WHERE
+			NO = #{no}	
+			AND DEL_YN = 'N' 		
+	</select>
+
+	<!-- 목록 갯수 -->
+	<select id="selectMainListCnt" resultType="int">
+		/* mainBbsMapper.selectMainListCnt */
+		<!-- SELECT FOUND_ROWS() AS totalRows -->
+		SELECT
+			COUNT(no)
+		FROM
+			TB_MAIN_BBS
+		WHERE
+			DEL_YN = 'N'
+	</select>
+
+	<!-- 등록 -->
+	<insert id="insertMainData" parameterType="mainBbsVo">
+		/* mainBbsMapper.insertMainData */
+		<selectKey keyProperty="no" resultType="int" order="AFTER">
+	        SELECT LAST_INSERT_ID()
+	    </selectKey>
+		INSERT INTO TB_MAIN_BBS (
+			TITLE,
+			CONTENT
+		) VALUES (
+			#{title},
+			#{content}
+		)
+	</insert>
+
+	<!-- 삭제 -->
+	<!-- <delete id="deleteMainData" parameterType="mainBbsVo">
+		/* deleteMainData */
+		DELETE FROM TB_MAIN_BBS
+		WHERE
+			NO = #{no}
+	</delete> -->
+	<update id="deleteMainData" parameterType="mainBbsVo">
+		/* deleteMainData */
+		UPDATE TB_MAIN_BBS SET
+			DEL_YN = 'Y'
+		WHERE
+			NO = #{no}
+	</update>
+
+	<!-- 수정 -->
+	<update id="modifyMainData" parameterType="mainBbsVo">
+		/* modifyMainData */
+		UPDATE TB_MAIN_BBS SET
+			TITLE = #{title}
+			, CONTENT = #{content}
+		WHERE
+			NO = #{no}		
+			AND DEL_YN = 'N'
+	</update>
+
+
+</mapper>

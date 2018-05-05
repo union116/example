@@ -1,0 +1,890 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+  version="2.0">
+    
+	<description>Site 1.0 functions library</description>
+	<display-name>site functions</display-name>
+	<tlib-version>1.0</tlib-version>
+	<short-name>sfn</short-name>
+
+	<function>
+		<name>getThumbNailImageName</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>String getThumbNailImageName(java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>getThumbNailImageNameBySize</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>String getThumbNailImageNameBySize(java.lang.String, int, int)</function-signature> 
+	</function>
+	<function>
+		<name>getThumbNailImageNameView</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>String getThumbNailImageNameView(java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>removeTag</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>String removeTag(java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>convertHtmlImg</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>String convertHtmlImg(java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>getToday</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>String getToday(java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>isNowBetween</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>boolean isNowBetween(java.lang.String, java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>isPast</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>boolean isPast(java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>isCellPhone</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>boolean isCellPhone(java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>etcDeptMap</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.util.HashMap etcDeptMap()</function-signature> 
+	</function>	
+	<function>
+		<name>toInt</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>int toInt(java.lang.Object)</function-signature> 
+	</function>
+	<function>
+		<name>toIntRevalue</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>int toIntRevalue(java.lang.Object, int)</function-signature> 
+	</function>
+	<function>
+		<name>toIntArray</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+			<function-signature>int[] toIntArray(java.lang.Object[])</function-signature> 
+		</function>
+	<function>
+		<name>toIntRequest</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>int toIntRequest(javax.servlet.http.HttpServletRequest, java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>toIntRequestRevalue</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>int toIntRequestRevalue(javax.servlet.http.HttpSession, java.lang.String, int)</function-signature> 
+	</function>
+	<function>
+		<name>toIntSession</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>int toIntSession(javax.servlet.http.HttpSession, java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>toIntSessionRevalue</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>int toIntSessionRevalue(javax.servlet.http.HttpSession, java.lang.String, int)</function-signature> 
+	</function>
+	<function>
+		<name>toDouble</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>double toDouble(java.lang.Object)</function-signature> 
+	</function>
+	<function>
+		<name>toDoubleRevalue</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>double toDoubleRevalue(java.lang.String, double)</function-signature> 
+	</function>
+	<function>
+		<name>toDoubleRequest</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>double toDoubleRequest(javax.servlet.http.HttpServletRequest, java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>toDoubleRequestRevalue</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>double toDoubleRequestRevalue(javax.servlet.http.HttpServletRequest, java.lang.String, double)</function-signature> 
+	</function>
+	<function>
+		<name>toHangle</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String toHangle(java.lang.Object)</function-signature> 
+	</function>
+	<function>
+		<name>toString</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String toString(java.lang.Object)</function-signature> 
+	</function>
+	<function>
+		<name>toStringHtml</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String toStringHtml(java.lang.Object)</function-signature> 
+	</function>
+	<function>
+		<name>toStringYmd</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String toStringYmd(java.lang.Object)</function-signature> 
+	</function>
+	<function>
+		<name>toStringRevalue</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String toStringRevalue(java.lang.Object, java.lang.Object)</function-signature> 
+	</function>
+	<function>
+		<name>toStringRevalueHtml</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String toStringRevalueHtml(java.lang.Object, java.lang.Object)</function-signature> 
+	</function>
+	<function>
+		<name>toStringRevalueYmd</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String toStringRevalueYmd(java.lang.Object, java.lang.Object)</function-signature> 
+	</function>
+	<function>
+		<name>toStringRequest</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String toStringRequest(javax.servlet.http.HttpServletRequest, java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>toStringRequestHtml</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String toStringRequestHtml(javax.servlet.http.HttpServletRequest, java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>toStringRequestYmd</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String toStringRequestYmd(javax.servlet.http.HttpServletRequest, java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>toStringRequestRevalue</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String toStringRequestRevalue(javax.servlet.http.HttpServletRequest, java.lang.String, java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>toStringRequestRevalueHtml</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String toStringRequestRevalueHtml(javax.servlet.http.HttpServletRequest, java.lang.String, java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>toStringRequestRevalueYmd</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String toStringRequestRevalueYmd(javax.servlet.http.HttpServletRequest, java.lang.String, java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>toStringRequestChkvalue</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String toStringRequestChkvalue(javax.servlet.http.HttpServletRequest, java.lang.String, java.lang.String, java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>toStringRequestChkvalueHtml</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String toStringRequestChkvalueHtml(javax.servlet.http.HttpServletRequest, java.lang.String, java.lang.String, java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>toStringRequestYmdBetween</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String toStringRequestYmdBetween(javax.servlet.http.HttpServletRequest, java.lang.String, java.lang.String, java.lang.String, java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>toStringSession</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String toStringSession(javax.servlet.http.HttpSession, java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>toStringSessionHtml</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String toStringSessionHtml(javax.servlet.http.HttpSession, java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>toStringSessionRevalue</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String toStringSessionRevalue(javax.servlet.http.HttpSession, java.lang.String, java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>toStringSessionRevalueHtml</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String toStringSessionRevalueHtml(javax.servlet.http.HttpSession, java.lang.String, java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>toStringStr</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String toStringStr(java.util.HashMap, java.lang.String, java.lang.String, java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>toHashMapStringString</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.util.HashMap toHashMapStringString(java.lang.Object)</function-signature> 
+	</function>
+	<function>
+		<name>toHashMapStringStringRevalue</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.util.HashMap toHashMapStringStringRevalue(java.lang.Object, java.lang.Object)</function-signature> 
+	</function>
+	<function>
+		<name>toHashMapStringInteger</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.util.HashMap toHashMapStringInteger(java.lang.Object)</function-signature> 
+	</function>
+	<function>
+		<name>toHashMapStringIntegerRevalue</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.util.HashMap toHashMapStringIntegerRevalue(java.lang.Object, java.lang.Object)</function-signature> 
+	</function>
+	<function>
+		<name>toHashMapStringDouble</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.util.HashMap toHashMapStringDouble(java.lang.Object)</function-signature> 
+	</function>
+	<function>
+		<name>toHashMapStringDoubleRevalue</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.util.HashMap toHashMapStringDoubleRevalue(java.lang.Object, java.lang.Object)</function-signature> 
+	</function>
+	<function>
+		<name>toHashMapStringObject</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.util.HashMap toHashMapStringObject(java.lang.Object)</function-signature> 
+	</function>
+	<function>
+		<name>toHashMapStringObjectRevalue</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.util.HashMap toHashMapStringObjectRevalue(java.lang.Object, java.lang.Object)</function-signature> 
+	</function>
+	<function>
+		<name>toParamStr</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String toParamStr(javax.servlet.http.HttpServletRequest, java.lang.String, java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>toParamStrHtml</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String toParamStrHtml(javax.servlet.http.HttpServletRequest, java.lang.String, java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>toParamStrStartSymbol</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String toParamStrStartSymbol(javax.servlet.http.HttpServletRequest, java.lang.String, java.lang.String, java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>toParamStrStartSymbolHtml</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String toParamStrStartSymbolHtml(javax.servlet.http.HttpServletRequest, java.lang.String, java.lang.String, java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>toParamHidden</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String toParamHidden(javax.servlet.http.HttpServletRequest, java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>toParamAllHidden</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String toParamAllHidden(javax.servlet.http.HttpServletRequest, java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>toParamValueStr</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String toParamValueStr(javax.servlet.http.HttpServletRequest, java.lang.String, java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>toParamTelNo</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String toParamTelNo(javax.servlet.http.HttpServletRequest, java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>toParamAddSymbolStr</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String toParamAddSymbolStr(javax.servlet.http.HttpServletRequest, java.lang.String, java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>toParamValuesAddSymbolStr</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String toParamValuesAddSymbolStr(javax.servlet.http.HttpServletRequest, java.lang.String, java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>toParameterValues</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String[] toParameterValues(javax.servlet.http.HttpServletRequest, java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>toParamHash</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.util.HashMap toParamHash(javax.servlet.http.HttpServletRequest)</function-signature> 
+	</function>
+	<function>
+		<name>toStringCharSetEncodeParam</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String toStringCharSetEncodeParam(javax.servlet.http.HttpServletRequest, java.lang.String, java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>toLongFromDate</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>long toLongFromDate(java.util.Date)</function-signature> 
+	</function>
+	<function>
+		<name>toLongTimestamp</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>long toLongFromTimestamp(java.sql.Timestamp)</function-signature> 
+	</function>
+	<function>
+		<name>toDateFromLong</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.util.Date toDateFromLong(long)</function-signature> 
+	</function>
+	<function>
+		<name>toDateFromTimestamp</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.util.Date toDateFromTimestamp(java.sql.Timestamp)</function-signature> 
+	</function>
+	<function>
+		<name>toDate</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.util.Date toDate(java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>toTimestampFromLong</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.sql.Timestamp toTimestampFromLong(long)</function-signature> 
+	</function>
+	<function>
+		<name>toTimestampFromDate</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.sql.Timestamp toTimestampFromDate(java.util.Date)</function-signature> 
+	</function>
+	<function>
+		<name>toTimestamp</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.sql.Timestamp toTimestamp(java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>toDateFormatFromDate</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String toDateFormatFromDate(java.util.Date, java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>toDateFormatFromLong</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String toDateFormatFromLong(Long, java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>toDateFormatFromString</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String toDateFormatFromString(java.lang.String, java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>toKor</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String toKor(java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>toEng</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String toEng(java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>toTelNo</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String toTelNo(java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>toTelNoArray</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String[] toTelNoArray(java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>toStrArrayMaxSize</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String[] toStrArrayMaxSize(java.lang.String, java.lang.String, int)</function-signature> 
+	</function>
+	<function>
+		<name>toStrArray</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String[] toStrArray(java.lang.String, java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>toHash</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.util.HashMap toHash(java.lang.String, java.lang.String, java.lang.String)</function-signature> 
+	</function>
+	
+	<function>
+		<name>changeString</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>String changeString(java.lang.Object, java.lang.Object, java.lang.Object)</function-signature> 
+	</function>
+
+	<function>
+		<name>changeInt</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>int changeInt(java.lang.Object, java.lang.Object, java.lang.Object)</function-signature> 
+	</function>	
+	
+	<function>
+		<name>round</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>double round(double, int)</function-signature> 
+	</function>
+	<function>
+		<name>roundDown</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>double roundDown(double, int)</function-signature> 
+	</function>
+	<function>
+		<name>roundUp</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>double roundUp(double, int)</function-signature> 
+	</function>
+	<function>
+		<name>amount</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String amount(double)</function-signature> 
+	</function>
+	<function>
+		<name>decimal</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String decimal(double, java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>decimalFromString</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String decimalFromString(java.lang.String, java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>shortSubstring</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String shortSubstring(java.lang.String, int)</function-signature> 
+	</function>
+	<function>
+		<name>shortByteString</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String shortByteString(java.lang.String, int)</function-signature> 
+	</function>
+	<function>
+		<name>sortInteger</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String sortInteger(java.lang.String, java.lang.String, int)</function-signature> 
+	</function>
+	<function>
+		<name>sortString</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String sortString(java.lang.String, java.lang.String, int)</function-signature> 
+	</function>
+	<function>
+		<name>sortIntegerArray</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String[] sortIntegerArray(java.lang.String, java.lang.String, java.lang.String, int)</function-signature> 
+	</function>
+	<function>
+		<name>sortStringArray</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String[] sortStringArray(java.lang.String, java.lang.String, java.lang.String, int)</function-signature> 
+	</function>
+	<function>
+		<name>limitByteAndEnterAddBrTag</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String limitByteAndEnterAddBrTag(java.lang.String, int)</function-signature> 
+	</function>
+	<function>
+		<name>limitByteAddBrTag</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String limitByteAddBrTag(java.lang.String, int)</function-signature> 
+	</function>
+	<function>
+		<name>lpad</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String lpad(java.lang.String, int, java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>rpad</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String rpad(java.lang.String, int, java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>substringBefore</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String substringBefore(java.lang.String, java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>substringBefore2</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String substringBefore2(java.lang.String, java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>substringAfter</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String substringAfter(java.lang.String, java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>substringAfter2</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String substringAfter2(java.lang.String, java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>encode</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String encode(java.lang.String, java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>decode</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String decode(java.lang.String, java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>base64Encode</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String base64Encode(java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>base64Decode</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String base64Decode(java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>addSymbol</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String addSymbol(double, java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>addSymbolFromString</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String addSymbolFromString(java.lang.String, java.lang.String, int)</function-signature> 
+	</function>
+	<function>
+		<name>addZero</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String addZero(java.lang.Object)</function-signature> 
+	</function>
+	<function>
+		<name>getByteLength</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>int getByteLength(java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>getMaxDay</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>int getMaxDay(int, int)</function-signature> 
+	</function>
+	<function>
+		<name>getMaxDayFromYm</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>int getMaxDayFromYm(java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>getTotalWeekTime</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>int getTotalWeekTime(int, int)</function-signature> 
+	</function>
+	<function>
+		<name>getTotalWeekTimeFromYm</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>int getTotalWeekTimeFromYm(java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>getWeekTime</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>int getWeekTime(java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>getWeekDayFromYm</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>int getWeekDayFromYm(java.lang.String, int, int)</function-signature> 
+	</function>
+	<function>
+		<name>getWeekDay</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>int getWeekDay(int, int, int, int)</function-signature> 
+	</function>
+	<function>
+		<name>getWeekYmdFromYm</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String getWeekYmdFromYm(java.lang.String, int, int)</function-signature> 
+	</function>
+	<function>
+		<name>getWeekYmd</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String getWeekYmd(int, int, int, int)</function-signature> 
+	</function>
+	<function>
+		<name>getWeek</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>int getWeek(int, int, int)</function-signature> 
+	</function>
+	<function>
+		<name>getWeekFromYmd</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>int getWeekFromYmd(java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>getWeekFirstDay</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>int getWeekFirstDay(int, int, int)</function-signature> 
+	</function>
+	<function>
+		<name>getWeekFirstDayFromYm</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>int getWeekFirstDayFromYm(java.lang.String, int)</function-signature> 
+	</function>
+	<function>
+		<name>getTotalWeek</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>int getTotalWeek(int, int)</function-signature> 
+	</function>
+	<function>
+		<name>getTotalWeekFromYmd</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>int getTotalWeekFromYmd(java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>getWeekKor</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String getWeekKor(int, int, int)</function-signature> 
+	</function>
+	<function>
+		<name>getWeekKorFromYmd</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String getWeekKorFromYmd(java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>getYearNow</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>int getYearNow()</function-signature> 
+	</function>
+	<function>
+		<name>getMonthNow</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>int getMonthNow()</function-signature> 
+	</function>
+	<function>
+		<name>getDayNow</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>int getDayNow()</function-signature> 
+	</function>
+	<function>
+		<name>getDateAddDayNow</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.util.Date getDateAddDayNow(int)</function-signature> 
+	</function>
+	<function>
+		<name>getYmdAddDayNow</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String getYmdAddDayNow(int)</function-signature> 
+	</function>
+	<function>
+		<name>getDateAddDay</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.util.Date getDateAddDay(java.util.Date, int)</function-signature> 
+	</function>
+	<function>
+		<name>getYmdAddDay</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String getYmdAddDay(java.util.Date, int)</function-signature> 
+	</function>
+	<function>
+		<name>getYmdAddMonth</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String getYmdAddMonth(java.lang.String, int)</function-signature> 
+	</function>
+	<function>
+		<name>getYmAddMonth</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String getYmAddMonth(java.lang.String, int)</function-signature> 
+	</function>
+	<function>
+		<name>getYmdAddMonthFromDate</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String getYmdAddMonthFromDate(java.util.Date, int)</function-signature> 
+	</function>
+	<function>
+		<name>getSubDaysFromString</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>int getSubDaysFromString(java.lang.String, java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>getSubDaysFromDate</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>int getSubDaysFromDate(java.util.Date, java.util.Date)</function-signature> 
+	</function>
+	<function>
+		<name>getSubDaysNowFromDate</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>int getSubDaysNowFromDate(java.util.Date)</function-signature> 
+	</function>
+	<function>
+		<name>getSubDaysNowFromYmd</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>int getSubDaysNowFromYmd(java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>getImgSize</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>int[] getImgSize(java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>getImgReSize</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>int[] getImgReSize(int, int, java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>getFileType</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String getFileType(java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>getBrowserVer</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String getBrowserVer(javax.servlet.http.HttpServletRequest)</function-signature> 
+	</function>
+	<function>
+		<name>isDaysNew</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>boolean isDaysNew(java.util.Date, int)</function-signature> 
+	</function>
+	<function>
+		<name>isEqual</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>boolean isEqual(java.lang.String, java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>isIDType</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>boolean isIDType(java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>isEmpty</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>boolean isEmpty(java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>isFirefox</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>boolean isFirefox(javax.servlet.http.HttpServletRequest)</function-signature> 
+	</function>
+	<function>
+		<name>isOpera</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>boolean isOpera(javax.servlet.http.HttpServletRequest)</function-signature> 
+	</function>
+	<function>
+		<name>isChrome</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>boolean isChrome(javax.servlet.http.HttpServletRequest)</function-signature> 
+	</function>
+	<function>
+		<name>isIE6</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>boolean isIE6(javax.servlet.http.HttpServletRequest)</function-signature> 
+	</function>
+	<function>
+		<name>isIE7</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>boolean isIE7(javax.servlet.http.HttpServletRequest)</function-signature> 
+	</function>
+	<function>
+		<name>isIE8</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>boolean isIE8(javax.servlet.http.HttpServletRequest)</function-signature> 
+	</function>
+	<function>
+		<name>isIE9</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>boolean isIE9(javax.servlet.http.HttpServletRequest)</function-signature> 
+	</function>
+	<function>
+		<name>isIE10</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>boolean isIE10(javax.servlet.http.HttpServletRequest)</function-signature> 
+	</function>
+	<function>
+		<name>isEqualValue</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>boolean isEqualValue(java.lang.String, java.lang.String, java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>isImageFile</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>boolean isImageFile(java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>isIndexOfValue</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>boolean isIndexOfValue(java.lang.String, java.lang.String, java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>selected</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String selected(java.lang.Object, java.lang.Object)</function-signature> 
+	</function>
+	<function>
+		<name>checked</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String checked(java.lang.Object, java.lang.Object)</function-signature> 
+	</function>
+	<function>
+		<name>flashWrite</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String flashWrite(java.lang.String, int, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>movieWrite</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String movieWrite(javax.servlet.http.HttpServletRequest, java.lang.String, int, int, java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>makeMD5</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String makeMD5(java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>replaceAll</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String replaceAll(java.lang.String, java.lang.String, java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>replaceOne</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String replaceOne(java.lang.String, java.lang.String, java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>tagClean</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String tagClean(java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>content_standard</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String content_standard(java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>content_tag</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String content_tag(java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>title_tag</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String title_tag(java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>extractNumber</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String extractNumber(java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>htmlSpecialChars</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>java.lang.String htmlSpecialChars(java.lang.String)</function-signature> 
+	</function>
+	<function>
+		<name>makeDateString</name> 
+		<function-class>com.union.example.common.utils.SiteFn</function-class> 
+		<function-signature>String makeDateString(java.lang.String)</function-signature> 
+	</function>
+</taglib>

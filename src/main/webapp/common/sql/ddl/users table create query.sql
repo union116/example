@@ -1,0 +1,17 @@
+CREATE TABLE `tb_users` (
+	`id` INT(11) NOT NULL AUTO_INCREMENT COMMENT '아이디',
+	`email` VARCHAR(100) NULL DEFAULT NULL COMMENT '이메일',
+	`password` VARCHAR(500) NULL DEFAULT NULL COMMENT '비밀번호',
+	`nickname` VARCHAR(50) NULL DEFAULT NULL COMMENT '별명',
+	`sns_id` VARCHAR(255) NULL DEFAULT NULL COMMENT 'sns_아이디',
+	`sns_type` VARCHAR(10) NULL DEFAULT NULL COMMENT 'sns_타입',
+	`sns_profile` VARCHAR(255) NULL DEFAULT NULL COMMENT 'sns_프로필',
+	`create_date` DATETIME NULL DEFAULT CURRENT_TIMESTAMP COMMENT '등록_일시',
+	`modify_date` TIMESTAMP NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP COMMENT '수정_일시',
+	PRIMARY KEY (`id`, `email`),
+	UNIQUE INDEX `idx1_email` (`email`),
+	INDEX `idx2_sns_id` (`sns_id`)
+)
+COLLATE='utf8_general_ci'
+ENGINE=InnoDB
+;

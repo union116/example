@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.union.example.login.service.impl.LoginMapper">
+
+	<select id="selectUserInfoByIdnPwd" parameterType="userVo" resultType="userVo">
+		/* loginMapper.selectUserInfoByIdnPwd */
+		SELECT * FROM TB_USERS
+		WHERE
+			EMAIL = #{email}
+			AND PASSWORD = #{password}
+	</select>
+
+</mapper>
